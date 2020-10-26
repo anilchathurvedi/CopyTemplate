@@ -1,0 +1,10 @@
+- name: to copy a file
+  hosts: two
+  gather_facts: yes
+  tasks:
+    - name: copying
+      copy:
+        src: /home/KAnil/project1/target/project1.war
+        dest: /home/KAnil/Ansible_Assignment/copiesfiles/
+        force: yes
+         
